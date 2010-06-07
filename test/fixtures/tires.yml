@@ -1,0 +1,41 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  fleet_id: 1
+  assay_id: 1
+  type: MyString
+  tag: MyString
+  brand: MyString
+  model: MyString
+  size: MyString
+  times: 1
+  furrow: 9.99
+  fault_id: 1
+  cause_id: 1
+  comment: MyString
+  plate: MyString
+  pression: 9.99
+  position: MyString
+  odometer: 9.99
+  reformer: MyString
+  created_at: 2010-06-06 01:19:12
+
+two:
+  fleet_id: 1
+  assay_id: 1
+  type: MyString
+  tag: MyString
+  brand: MyString
+  model: MyString
+  size: MyString
+  times: 1
+  furrow: 9.99
+  fault_id: 1
+  cause_id: 1
+  comment: MyString
+  plate: MyString
+  pression: 9.99
+  position: MyString
+  odometer: 9.99
+  reformer: MyString
+  created_at: 2010-06-06 01:19:12

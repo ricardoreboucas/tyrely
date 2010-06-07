@@ -1,0 +1,34 @@
+<div class="span-4">
+<h2>Fleets</h2>  
+</div>
+<div class="span-6 last">
+<%= link_to 'New fleet', new_fleet_path %>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tyres</th>
+    <th>Vehicles</th>
+    <th>Assays</th>
+    <th>Last Assay</th>
+    <th>% Scraping</th>
+    <th>% Reforming</th>
+    <th>% Wasting</th>    
+    <th></th>
+  </tr>
+
+<% @fleets.each do |fleet| %>
+  <tr>
+    <td><%=h fleet.name %></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= link_to 'Dashboard', fleet %></td>
+  </tr>
+<% end %>
+</table>

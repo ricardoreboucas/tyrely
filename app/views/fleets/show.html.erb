@@ -1,0 +1,34 @@
+<h2><%=h @fleet.name %></h2>
+
+<span class="infotext">Pneus analisados:
+</span>
+<h2><%=h total=@fleet.tires.count %></h2>
+
+<div id="" class="span-10 last">
+<div class=" module lookupchart" style="margin-left: 0px;">
+<div class="module-content">
+<h2>Top 10 Falhas</h2>
+<table class="minicharttable">  
+<tbody>
+<% @statistics.each do |s| %>
+  <tr>
+    <td class="label">
+      <span class="name">
+        <%= link_to s.fault_name, '#' %>
+        <span class="index" style="width: <%=h s.total.to_f*100/total %>%;"></span>
+      </span>
+    </td>
+    <td class="count"><%=h s.total %></td>
+    <td class="percent"><%=h s.total.to_f*100/total %>%</td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="" class="span-13 last">
+</div>
+
+<%= link_to 'Edit', edit_fleet_path(@fleet) %> |
+<%= link_to 'Back', fleets_path %>

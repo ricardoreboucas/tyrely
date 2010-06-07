@@ -1,0 +1,34 @@
+<h1>Listing assays</h1>
+
+<table>
+  <tr>
+    <th>Fleet</th>
+    <th>Done on</th>
+    <th>Doer</th>
+    <th>Tyres</th>
+    <th>Vehicles</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Comment</th>
+  </tr>
+
+<% @assays.each do |assay| %>
+  <tr>
+    <td><%=h assay.fleet.name %></td>
+    <td><%=h assay.done_on %></td>
+    <td><%=h assay.doer %></td>
+    <td><%=h assay.tyres %></td>
+    <td><%=h assay.vehicles %></td>
+    <td><%=h assay.created_at %></td>
+    <td><%=h assay.updated_at %></td>
+    <td><%=h assay.comment %></td>
+    <td><%= link_to 'Show', assay %></td>
+    <td><%= link_to 'Edit', edit_assay_path(assay) %></td>
+    <td><%= link_to 'Destroy', assay, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New assay', new_assay_path %>

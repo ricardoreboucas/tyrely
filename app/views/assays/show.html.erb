@@ -1,0 +1,43 @@
+<p>
+  <b>Fleet:</b>
+  <%=h @assay.fleet_id %>
+</p>
+
+<p>
+  <b>Done on:</b>
+  <%=h @assay.done_on %>
+</p>
+
+<p>
+  <b>Doer:</b>
+  <%=h @assay.doer %>
+</p>
+
+<p>
+  <b>Tyres:</b>
+  <%=h @assay.tyres %>
+</p>
+
+<p>
+  <b>Vehicles:</b>
+  <%=h @assay.vehicles %>
+</p>
+
+<p>
+  <b>Created at:</b>
+  <%=h @assay.created_at %>
+</p>
+
+<p>
+  <b>Updated at:</b>
+  <%=h @assay.updated_at %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%=h @assay.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_assay_path(@assay) %> |
+<%= link_to 'Back', assays_path %>

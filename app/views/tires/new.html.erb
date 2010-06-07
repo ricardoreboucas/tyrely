@@ -1,0 +1,87 @@
+<h1>New tire</h1>
+
+<% form_for(@tire) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :fleet_id %><br />
+    <%= f.text_field :fleet_id %>
+  </p>
+  <p>
+    <%= f.label :assay_id %><br />
+    <%= f.text_field :assay_id %>
+  </p>
+  <p>
+    <%= f.label :kind %><br />
+    <%= f.text_field :kind %>
+  </p>
+  <p>
+    <%= f.label :tag %><br />
+    <%= f.text_field :tag %>
+  </p>
+  <p>
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand %>
+  </p>
+  <p>
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :size %><br />
+    <%= f.text_field :size %>
+  </p>
+  <p>
+    <%= f.label :times %><br />
+    <%= f.text_field :times %>
+  </p>
+  <p>
+    <%= f.label :furrow %><br />
+    <%= f.text_field :furrow %>
+  </p>
+  <p>
+    <%= f.label :dot %><br />
+    <%= f.text_field :dot %>
+  </p>
+  <p>
+    <%= f.label :fault_id %><br />
+    <%= f.text_field :fault_id %>
+  </p>
+  <p>
+    <%= f.label :cause_id %><br />
+    <%= f.text_field :cause_id %>
+  </p>
+  <p>
+    <%= f.label :comment %><br />
+    <%= f.text_field :comment %>
+  </p>
+  <p>
+    <%= f.label :plate %><br />
+    <%= f.text_field :plate %>
+  </p>
+  <p>
+    <%= f.label :pression %><br />
+    <%= f.text_field :pression %>
+  </p>
+  <p>
+    <%= f.label :position %><br />
+    <%= f.text_field :position %>
+  </p>
+  <p>
+    <%= f.label :odometer %><br />
+    <%= f.text_field :odometer %>
+  </p>
+  <p>
+    <%= f.label :reformer %><br />
+    <%= f.text_field :reformer %>
+  </p>
+  <p>
+    <%= f.label :created_at %><br />
+    <%= f.datetime_select :created_at %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', tires_path %>

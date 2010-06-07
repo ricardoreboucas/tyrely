@@ -1,0 +1,56 @@
+<h1>Listing tires</h1>
+
+<table>
+  <tr>
+    <th>Fleet</th>
+    <th>Assay</th>
+    <th>Kind</th>
+    <th>Tag</th>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>Size</th>
+    <th>Times</th>
+    <th>Furrow</th>
+    <th>Dot</th>
+    <th>Fault</th>
+    <th>Cause</th>
+    <th>Comment</th>
+    <th>Plate</th>
+    <th>Pression</th>
+    <th>Position</th>
+    <th>Odometer</th>
+    <th>Reformer</th>
+    <th>Created at</th>
+  </tr>
+
+<% @tires.each do |tire| %>
+  <tr>
+    <td><%=h tire.fleet_id %></td>
+    <td><%=h tire.assay_id %></td>
+    <td><%=h tire.kind %></td>
+    <td><%=h tire.tag %></td>
+    <td><%=h tire.brand %></td>
+    <td><%=h tire.model %></td>
+    <td><%=h tire.size %></td>
+    <td><%=h tire.times %></td>
+    <td><%=h tire.furrow %></td>
+    <td><%=h tire.dot %></td>
+    <td><%=h tire.fault_id %></td>
+    <td><%=h tire.cause_id %></td>
+    <td><%=h tire.comment %></td>
+    <td><%=h tire.plate %></td>
+    <td><%=h tire.pression %></td>
+    <td><%=h tire.position %></td>
+    <td><%=h tire.odometer %></td>
+    <td><%=h tire.reformer %></td>
+    <td><%=h tire.created_at %></td>
+    <td><%= link_to 'Show', tire %></td>
+    <td><%= link_to 'Edit', edit_tire_path(tire) %></td>
+    <td><%= link_to 'Destroy', tire, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New tire', new_tire_path %>
